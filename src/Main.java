@@ -1,7 +1,30 @@
 import java.util.Scanner;
 
+import OOP.Employee;
+import OOP.Point;
 public class Main {
     public static void main(String[] args)
+    {
+       employee();
+    }
+    static void employee()
+    {
+        Employee e = new Employee(1 , "Nhat" , "Nguyen", 100000000 );
+        System.out.println(e.toString());
+    }
+    static void OOP()
+    {
+        Point p = new Point();
+        System.out.println("Toạ độ điểm P là: "+ p.toString());
+        Point q = new Point(5,10);
+        System.out.println("Toạ độ điểm Q là: "+ q.toString());
+        Point t = new Point(q);
+        System.out.println("Toạ độ điểm Q là: "+ t.toString());
+        double d = q.Distance(p);
+
+    }
+
+    static void CB()
     {
         boolean flag = true;
         int n;
